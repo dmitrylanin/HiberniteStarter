@@ -73,7 +73,7 @@ public class DataLists {
                         .lastname("Danvers")
                         .birthday(new Birthday(LocalDate.of(1988, 3, 13)))
                         .build())
-                .role(Role.ADMIN)
+                .role(Role.USER)
                 .build();
 
         User harleyQuinn = User.builder()
