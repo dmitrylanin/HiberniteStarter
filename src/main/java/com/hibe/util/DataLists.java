@@ -66,6 +66,16 @@ public class DataLists {
                 .company(companies.get(3))
                 .build();
 
+        User captainMarvel = User.builder()
+                .username("captainMarvel@mail.ru")
+                .personalInfo(PersonalInfo.builder()
+                        .firstname("Carol")
+                        .lastname("Danvers")
+                        .birthday(new Birthday(LocalDate.of(1988, 3, 13)))
+                        .build())
+                .role(Role.ADMIN)
+                .build();
+
         User harleyQuinn = User.builder()
                 .username("harleyQuinn@mail.ru")
                 .personalInfo(PersonalInfo.builder()
@@ -76,12 +86,15 @@ public class DataLists {
                 .role(Role.ADMIN)
                 .build();
 
+
+
         users.add(magik);
         users.add(blackWidow);
         users.add(susanStorm);
         users.add(mystique);
         users.add(jeanGrey);
         users.add(harleyQuinn);
+        users.add(captainMarvel);
 
         return users;
     }
